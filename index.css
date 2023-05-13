@@ -1,0 +1,56 @@
+.container{
+    display: grid;
+    justify-content: space-evenly;
+    height: 500px;
+    width: 50%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide{
+    display: none;
+}
+
+.error{
+    color:red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+/* ESSSSSSSSSTTTTTTTTTTTTTTTTTTIIIIIIIIIIIIIIIILLLLLLLLLLLLLLLOOOOOOOOOOOOOSSSSSSSS CUENTA.HTML
+*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.operacionesBasicas{
+    
+  grid-template-columns: 25% 25% 25% 25%;
+  
+}
+
+.consulta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  justify-content: center;
+}
+
+img{
+    width: 15vw;
+    height: 25vh;
+}
