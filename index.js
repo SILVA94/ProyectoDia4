@@ -1,42 +1,70 @@
 
-
-
-function sumar(numero1,numero2){
-
-    
-    resultado = +numero1 + +numero2;
-    return resultado
+function mostrarResultado(resultado){
+    document.getElementById("resultado").value = resultado
 }
 
-function restar(numero1,numero2){
+function sumar(){
 
-    
-    resultado = +numero1 - +numero2;
-    return resultado
+    let numero1 = +document.getElementById("primerNumero").value
+    let numero2 = +document.getElementById("segundoNumero").value
+    mostrarResultado(numero1 + numero2)
 }
 
-function mostrarResultado(){
-    
-    let elementoNumero1 = document.getElementById("primerNumero");
-    let elementoNumero2 = document.getElementById("segundoNumero");
-    let elementoResultado = document.getElementById("elementoResultado");
-    let elementoSuma = sumar(elementoNumero1.value,elementoNumero2.value);
-    let elementoResta = restar(elementoNumero1.value,elementoNumero2.value);
-    
+function restar(){
 
-    
-    elementoResultado.textContent = "El resultado de la suma es " + elementoSuma
-    elementoResultado.textContent = "El resultado de la resta es " + elementoResta
-
-
+    let numero1 = +document.getElementById("primerNumero").value
+    let numero2 = +document.getElementById("segundoNumero").value
+    mostrarResultado(numero1 - numero2)
 }
 
-function restar(numero1,numero2){
+function multiplicar(){
 
-    
-    resultado = +numero1 - +numero2;
-    return resultado
+    let numero1 = +document.getElementById("primerNumero").value
+    let numero2 = +document.getElementById("segundoNumero").value
+    mostrarResultado(numero1 * numero2)
 }
 
+function dividir(){
 
+    let numero1 = +document.getElementById("primerNumero").value
+    let numero2 = +document.getElementById("segundoNumero").value
+    mostrarResultado(numero1 / numero2)
+}
 
+function potenciar(){
+    let numero1 = +document.getElementById("primerNumero").value
+    let numero2 = +document.getElementById("segundoNumero").value
+    mostrarResultado(Math.pow(numero1, numero2))
+}
+
+function raiz(){
+    let numero1 = document.getElementById("primerNumero").value
+    mostrarResultado(Math.sqrt(numero1))
+}
+
+function absoluto(){
+    let numero1 = document.getElementById("primerNumero").value
+    mostrarResultado(Math.abs(numero1))
+}
+
+function random(){
+    let maximo = +document.getElementById("primerNumero").value
+    let minimo = +document.getElementById("segundoNumero").value
+    maximo = maximo + 1
+    mostrarResultado(Math.floor(Math.random()*(maximo-minimo+1)+minimo))
+}
+
+function round(){
+    let resultado = document.getElementById("resultado").value
+    mostrarResultado(Math.round(resultado))
+}
+
+function ceil(){
+    let resultado = document.getElementById("resultado").value
+    mostrarResultado(Math.ceil(resultado))
+}
+
+function floor(){
+    let resultado = document.getElementById("resultado").value
+    mostrarResultado(Math.floor(resultado))
+}
